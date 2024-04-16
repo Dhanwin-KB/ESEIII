@@ -1,2 +1,2 @@
 pil
-plotly
+plotly-express
