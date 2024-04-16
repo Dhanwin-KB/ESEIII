@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import nltk
-import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer, WordNetLemmatizer
@@ -42,5 +41,6 @@ def processing(text):
 data['text_process'] = data['Review Text'].apply(processing)
 
 # Print some values
+st.header("Processed Data")
 st.write(data['text_process'].head(10))
 
